@@ -1,0 +1,61 @@
+.cabecalho { /*Flex-container*/
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between; /*Distribui o espaço entre os flex-itens*/
+    align-items: center; /*alinhamento dos itens dentro do flex-container*/
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.cabecalho__menu-hamburguer {
+    display: inline-block; /*Para podermos redimensionar a img do menu com width e height*/
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__img {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+    background: var(--branco);
+}
+
+
+.container__botao:checked ~ .lista-menu { /*:checked pseudo-classe verifica se esta preenchido o checkbox, "~" Vai procurar outras todas classes .lista-menu e aplicar o display-block*/
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
