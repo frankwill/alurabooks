@@ -37,3 +37,24 @@
 
 }
 
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5em;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+        width: 60%;
+    }
+
+    .contato__email {
+        width: 80%;
+        height: 20px;
+    }
+    .contato__email::placeholder {
+        background-position: 2em;
+        padding-left: 4em;
+    }
+}

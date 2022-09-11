@@ -116,5 +116,9 @@
     .lista-menu__titulo {
         display: none;
     }
+
+    .opcoes__botao {
+        display: none;
+    }
 }
 
