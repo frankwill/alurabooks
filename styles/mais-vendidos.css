@@ -69,7 +69,25 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1728px) {
+    .mais-vendidos__container {
+        display: flex;
+        margin: 0 15vw 0 15vw;
+        gap: 2em;
+    }
+
+    .mais-vendidos__titulo,
+    .cartao__titulo {
+        font-size: 32px;
+    }
+
+    .cartao {
+        width: 80%;
+    }
+
+    .cartao__descricao {
+        font-size: 18px;
+    }
     
 }
 
